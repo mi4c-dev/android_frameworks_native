@@ -309,7 +309,7 @@ status_t SensorDevice::setDelay(void* ident, int handle, int64_t samplingPeriodN
 
 int SensorDevice::getHalDeviceVersion() const {
     if (!mSensorDevice) return -1;
-    return mSensorDevice->common.version;
+    return 1;
 }
 
 status_t SensorDevice::flush(void* ident, int handle) {
